@@ -54,7 +54,7 @@ export default function LandingPage() {
           </h1>
           
           <p className="text-xl text-blue-100 mb-12 max-w-3xl mx-auto">
-            Join the most trusted platform for sports betting analytics and strategy sharing.
+            The most trusted platform for sports betting analytics and strategy sharing is coming soon.
           </p>
 
           {/* Features List */}

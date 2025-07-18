@@ -21,7 +21,7 @@ export default function EmailSignup() {
       })
 
       if (response.data.success) {
-        setMessage('Success! Check your email for a welcome message.')
+        setMessage('Success! You\'re on the list for early access and launch updates.')
         setEmail('')
         setFirstName('')
       }
@@ -35,7 +35,7 @@ export default function EmailSignup() {
   return (
     <div className="max-w-lg mx-auto">
       <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl">
-        <h3 className="text-2xl font-bold text-white text-center mb-6">Join the Community</h3>
+        <h3 className="text-2xl font-bold text-white text-center mb-6">Sign Up for Early Access</h3>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div>
@@ -70,7 +70,7 @@ export default function EmailSignup() {
                 Joining...
               </div>
             ) : (
-              'Get Early Access'
+              'Subscribe for Launch Updates'
             )}
           </button>
         </form>
@@ -97,7 +97,7 @@ export default function EmailSignup() {
         )}
         
         <p className="text-blue-200 text-sm text-center mt-6">
-          Join thousands of verified bettors building their edge together.
+          Be the first to know when TrueSharp launches. Get exclusive early access and launch updates.
         </p>
       </div>
     </div>
