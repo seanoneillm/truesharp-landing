@@ -15,17 +15,21 @@ export default function EmailSignup() {
     setMessage('')
 
     try {
+      console.log('Submitting form:', { email, firstName })
       const response = await axios.post('/api/subscribe', {
         email,
         firstName,
       })
 
+      console.log('Response:', response.data)
       if (response.data.success) {
         setMessage('Success! You\'re on the list for early access and launch updates.')
         setEmail('')
         setFirstName('')
       }
-    } catch (error) {
+    } catch (error: any) {
+      console.error('Form submission error:', error)
+      console.error('Error response:', error.response?.data)
       setMessage('Something went wrong. Please try again.')
     } finally {
       setIsSubmitting(false)
