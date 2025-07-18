@@ -1,8 +1,21 @@
 # TrueSharp Landing Page
 
+## Overview
+
+A modern, responsive landing page for TrueSharp's verified sports betting community. Features a clean design with the TrueSharp shield logo, gradient backgrounds, and a focused email collection form.
+
+## Key Features
+
+- **Verified Sports Betting Community** messaging
+- TrueSharp shield component matching the main app design
+- Responsive email signup form with modern card design
+- Four core value propositions highlighted with bullet points
+- Matching colors and fonts with the main TrueSharp application
+- Mobile-first responsive design
+
 ## Deployment Instructions
 
-This is a Next.js application that should be deployed to Vercel.
+This is a Next.js application optimized for Vercel deployment.
 
 ### Repository Setup
 
