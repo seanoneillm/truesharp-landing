@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
         attributes: {
           FNAME: firstName,
         },
-        listIds: [1], // Replace with your Brevo list ID
+        listIds: [3], // Your actual Brevo list ID
       },
       {
         headers: {
