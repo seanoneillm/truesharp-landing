@@ -6,9 +6,11 @@ export async function POST(request: NextRequest) {
     const { email, firstName } = await request.json()
 
     // Check if API key is configured
-    console.log('Environment variables:', Object.keys(process.env).filter(key => key.includes('BREVO')))
+    console.log('All env keys:', Object.keys(process.env).sort())
+    console.log('BREVO env variables:', Object.keys(process.env).filter(key => key.includes('BREVO')))
     console.log('BREVO_API_KEY exists:', !!process.env.BREVO_API_KEY)
     console.log('BREVO_API_KEY length:', process.env.BREVO_API_KEY?.length)
+    console.log('BREVO_API_KEY starts with xkeysib:', process.env.BREVO_API_KEY?.startsWith('xkeysib-'))
     
     if (!process.env.BREVO_API_KEY) {
       console.error('BREVO_API_KEY not configured')
